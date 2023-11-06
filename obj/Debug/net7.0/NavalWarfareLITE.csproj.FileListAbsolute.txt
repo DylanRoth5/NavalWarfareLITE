@@ -1,0 +1,14 @@
+C:\Users\dylan\BlackBox\NavalWarfareLITE\bin\Debug\net7.0\NavalWarfareLITE.exe
+C:\Users\dylan\BlackBox\NavalWarfareLITE\bin\Debug\net7.0\NavalWarfareLITE.deps.json
+C:\Users\dylan\BlackBox\NavalWarfareLITE\bin\Debug\net7.0\NavalWarfareLITE.runtimeconfig.json
+C:\Users\dylan\BlackBox\NavalWarfareLITE\bin\Debug\net7.0\NavalWarfareLITE.dll
+C:\Users\dylan\BlackBox\NavalWarfareLITE\bin\Debug\net7.0\NavalWarfareLITE.pdb
+C:\Users\dylan\BlackBox\NavalWarfareLITE\obj\Debug\net7.0\NavalWarfareLITE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dylan\BlackBox\NavalWarfareLITE\obj\Debug\net7.0\NavalWarfareLITE.AssemblyInfoInputs.cache
+C:\Users\dylan\BlackBox\NavalWarfareLITE\obj\Debug\net7.0\NavalWarfareLITE.AssemblyInfo.cs
+C:\Users\dylan\BlackBox\NavalWarfareLITE\obj\Debug\net7.0\NavalWarfareLITE.csproj.CoreCompileInputs.cache
+C:\Users\dylan\BlackBox\NavalWarfareLITE\obj\Debug\net7.0\NavalWarfareLITE.dll
+C:\Users\dylan\BlackBox\NavalWarfareLITE\obj\Debug\net7.0\refint\NavalWarfareLITE.dll
+C:\Users\dylan\BlackBox\NavalWarfareLITE\obj\Debug\net7.0\NavalWarfareLITE.pdb
+C:\Users\dylan\BlackBox\NavalWarfareLITE\obj\Debug\net7.0\NavalWarfareLITE.genruntimeconfig.cache
+C:\Users\dylan\BlackBox\NavalWarfareLITE\obj\Debug\net7.0\ref\NavalWarfareLITE.dll
