@@ -10,6 +10,7 @@ namespace NavalWarfareLITE;
 internal static class Program
 {
     public static Player MainPlayer;
+    public static Player SecondPlayer;
     private static void Main()
     {
         // Conexion.OpenConnection();
@@ -29,6 +30,7 @@ internal static class Program
                     Solo.Game(MainPlayer);
                     continue;
                 case 2:
+                    Coop.Game(MainPlayer,SecondPlayer);
                     continue;
                 case 3:
                     continue;
