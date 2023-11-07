@@ -22,9 +22,10 @@ public class IMap
         }
         return map;
     }
-    public static Map LaunchAt(Map map, int posX, int posY, Missile missile)
+    public static Map LaunchAt(Map map, Missile missile)
     {
-        map.Matrix[posX, posY] = missile.Skin;
+        if (map.Matrix[missile.XPos, missile.YPos]==Ship.Skin2)
+            map.Matrix[missile.XPos, missile.YPos] = missile.Skin;
         return map;
     }
 }

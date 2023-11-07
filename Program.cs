@@ -13,21 +13,15 @@ internal static class Program
     private static void Main()
     {
         // Conexion.OpenConnection();
-        Login();
         Menu();
         // Conexion.CloseConnection();
-    }
-
-    private static void Login()
-    {
-        MainPlayer = new Player(Read("Nickname?"));
     }
 
     private static void Menu()
     {
         while (true)
         {
-            string[] options = { "Solo", "Coop", "LAN Match", "Options"};
+            string[] options = { "Solo", "Coop", "Options"};
             var result = Tools.Menu("Calendar", options);
             switch (result)
             {
@@ -38,10 +32,6 @@ internal static class Program
                     continue;
                 case 3:
                     continue;
-                case 4:
-                    continue;
-                case 0:
-                    break;
             }
             break;
         }

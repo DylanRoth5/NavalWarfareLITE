@@ -30,26 +30,46 @@ public class Solo
         eMap = SetAt(eMap,eship3);
         eMap = SetAt(eMap,eship4);
         bool gaming = true;
-        int X = 0;
         int Y = 0;
+        int X = 0;
         while (gaming)
         {
             WriteLine();
-            eMap.ShowMap(true);
+            eMap.SelectInMap(false,X,Y);
             WriteLine();
             pMap.ShowMap(true);
             WriteLine();
-            WriteLine("What to do next?");
             ConsoleKeyInfo k = Catch();
-            if (k.Key == ConsoleKey.Enter) gaming = false;
-            if (k.Key == ConsoleKey.UpArrow) Y--;
-            if (k.Key == ConsoleKey.DownArrow) Y++;
-            if (k.Key == ConsoleKey.RightArrow) X++;
-            if (k.Key == ConsoleKey.LeftArrow) X--;
-            if (X<0) X = 0;
+            if (k.Key == ConsoleKey.Tab) gaming = false;
+            if (k.Key == ConsoleKey.Enter)
+            {
+                eMap = LaunchAt(eMap,new Missile(X,Y,Player));
+                Thread.Sleep(1000);
+                pMap = LaunchAt(pMap, new Missile(r.Next(0, 10), r.Next(0, 10), Enemy));
+            }
+            if (k.Key == ConsoleKey.UpArrow) X--;
+            if (k.Key == ConsoleKey.DownArrow) X++;
+            if (k.Key == ConsoleKey.RightArrow) Y++;
+            if (k.Key == ConsoleKey.LeftArrow) Y--;
             if (Y<0) Y = 0;
-            if (X>10) X = 10;
+            if (X<0) X = 0;
             if (Y>10) Y = 10;
+            if (X>10) X = 10;
+            if (!eMap.HasShips())
+            {
+                Clear();
+                Write("You Win!!");
+                Catch();
+                gaming = false;
+            }
+            if (!pMap.HasShips())
+            {
+                Clear();
+                Write("You Lose!!");
+                Catch();
+                gaming = false;
+            }
+            Clear();
         }
     }
 }

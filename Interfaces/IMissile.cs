@@ -13,6 +13,6 @@ public class IMissile
     
     public static void Launch(Map map,Missile misile)
     {
-        IMap.LaunchAt(map, misile.XPos, misile.YPos, misile);
+        IMap.LaunchAt(map, misile);
     }
 }

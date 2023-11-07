@@ -16,4 +16,10 @@ public class Missile
         YPos = y;
         Gamer = gamer;
     }
+    public Missile(int x,int y,Player gamer)
+    {
+        XPos = x;
+        YPos = y;
+        Gamer = gamer;
+    }
 }
