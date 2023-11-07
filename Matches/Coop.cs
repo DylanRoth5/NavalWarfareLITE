@@ -95,6 +95,22 @@ public class Coop
                     if (X2<0) X2 = 0;
                     if (Y2>10) Y2 = 10;
                     if (X2>10) X2 = 10;
+                    if (!eMap.HasShips())
+                    {
+                        Clear();
+                        Write("You Win!!");
+                        Catch();
+                        gaming = false;
+                        break;
+                    }
+                    if (!pMap.HasShips())
+                    {
+                        Clear();
+                        Write("You Lose!!");
+                        Catch();
+                        gaming = false;
+                        break;
+                    }
                     Clear();
                 }
             }
